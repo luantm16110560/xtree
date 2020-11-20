@@ -5,4 +5,4 @@ from odoo import fields, models
 class ActWindowView(models.Model):
     _inherit = 'ir.actions.act_window.view'
 
-    view_mode = fields.Selection(selection_add=[('xtree', "X Tree")], ondelete={'xtree': 'cascade'})
+    view_mode = fields.Selection(selection_add=[('xtree', "XTree")], ondelete={'xtree': 'cascade'})
