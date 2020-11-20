@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="xtree assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/xtree/static/src/css/xtree.css"/>
+            <script type="text/javascript" src="/xtree/static/src/js/xtree_controller.js"/>
+            <script type="text/javascript" src="/xtree/static/src/js/xtree_model.js"/>
+            <script type="text/javascript" src="/xtree/static/src/js/xtree_renderer.js"/>
+            <script type="text/javascript" src="/xtree/static/src/js/xtree_view.js"/>
+        </xpath>
+    </template>
+</odoo>
