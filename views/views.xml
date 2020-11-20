@@ -26,7 +26,7 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="xtree" id="xtree_menu_root" web_icon="erpvn_planning_management,static/description/icon2.png"/>
+    <menuitem name="xtree" id="xtree_menu_root" web_icon="xtree,static/src/img/icon.png"/>
 
     <!-- menu categories -->
 
