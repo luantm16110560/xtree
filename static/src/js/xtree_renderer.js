@@ -1,4 +1,4 @@
-odoo.define('xtree.Renderer', function (require) {
+odoo.define('xtree.XTreeRenderer', function (require) {
     "use strict";
 
     var AbstractRenderer = require('web.BasicRenderer');

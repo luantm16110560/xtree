@@ -1,4 +1,4 @@
-odoo.define('xtree.Controller', function (require) {
+odoo.define('xtree.XTreeController', function (require) {
     "use strict";
 
     var AbstractController = require('web.AbstractController');

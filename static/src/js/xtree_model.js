@@ -1,4 +1,4 @@
-odoo.define('xtree.Model', function (require) {
+odoo.define('xtree.XTreeModel', function (require) {
     "use strict";
 
     var AbstractModel = require('web.BasicModel');

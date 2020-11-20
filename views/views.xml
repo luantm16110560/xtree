@@ -6,9 +6,7 @@
       <field name="name">xtree list</field>
       <field name="model">res.partner</field>
       <field name="arch" type="xml">
-         <xtree>
-            <!-- <field name=""></field> -->
-        </xtree>
+        
       </field>
     </record>
 
@@ -17,7 +15,7 @@
 
     <record model="ir.actions.act_window" id="xtree_action_window">
       <field name="name">xtree window</field>
-      <field name="res_model">res.partner</field>
+      <!-- <field name="res_model">res.partner</field> -->
       <field name="view_mode">xtree</field>
     </record>
 
