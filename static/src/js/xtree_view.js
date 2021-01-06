@@ -10,7 +10,7 @@ odoo.define('xtree.XTreeView', function (require) {
 
     var XTreeView = AbstractView.extend({
         display_name: 'XTree',
-        icon: 'fa-tree',
+        icon: 'fa-pagelines',
         cssLibs: [
             '/xtree/static/src/css/xtree.css',
         ],
