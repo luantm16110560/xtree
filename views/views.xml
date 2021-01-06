@@ -1,42 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
+    <data>
+        <record model="ir.ui.view" id="xtree_list">
+            <field name="name">xtree list</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+              <xtree></xtree>
+            </field>
+        </record>
+     
+        <record model="ir.actions.act_window" id="xtree_action_window">
+            <field name="name">xtree window</field>
+            <field name="res_model">res.partner</field>
+            <field name="view_mode">xtree</field>
+        </record>
+    
+        <menuitem name="xtree" id="xtree_menu_root" web_icon="xtree,static/src/img/icon.png"/>
 
-    <record model="ir.ui.view" id="xtree_list">
-      <field name="name">xtree list</field>
-      <field name="model">res.partner</field>
-      <field name="arch" type="xml">
-        
-      </field>
-    </record>
-
-
-    <!-- actions opening views on models -->
-
-    <record model="ir.actions.act_window" id="xtree_action_window">
-      <field name="name">xtree window</field>
-      <!-- <field name="res_model">res.partner</field> -->
-      <field name="view_mode">xtree</field>
-    </record>
-
-
-
-
-    <!-- Top menu item -->
-
-    <menuitem name="xtree" id="xtree_menu_root" web_icon="xtree,static/src/img/icon.png"/>
-
-    <!-- menu categories -->
-
-    <menuitem name="Menu 1" id="xtree_menu_1" parent="xtree_menu_root"/>
-    <menuitem name="Menu 2" id="xtree_menu_2" parent="xtree_menu_root"/>
-
-    <!-- actions -->
-
-    <menuitem name="List" id="xtree.menu_1_list" parent="xtree_menu_1"
+        <menuitem name="Menu 1" id="xtree_menu_1" parent="xtree_menu_root"/>
+        <menuitem name="Menu 2" id="xtree_menu_2" parent="xtree_menu_root"/>
+ 
+        <menuitem name="List" id="xtree.menu_1_list" parent="xtree_menu_1"
               action="xtree_action_window"/>
-    <!-- <menuitem name="Server to list" id="xtree" parent="xtree.menu_2"
-              action="xtree.action_server"/> -->
-
-  </data>
+    
+    </data>
 </odoo>
