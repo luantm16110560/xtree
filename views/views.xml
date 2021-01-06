@@ -12,7 +12,7 @@
         <record model="ir.actions.act_window" id="xtree_action_window">
             <field name="name">xtree window</field>
             <field name="res_model">res.partner</field>
-            <field name="view_mode">xtree</field>
+            <field name="view_mode">xtree,tree</field>
         </record>
     
         <menuitem name="xtree" id="xtree_menu_root" web_icon="xtree,static/src/img/icon.png"/>
